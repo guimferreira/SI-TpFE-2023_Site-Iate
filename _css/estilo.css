@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    background-color: #EBEBEB;
+}
+
+header{
+    background-color: #21272B;
+}
+
+h2#titulo1{
+    color: #1BB4E8;
+}
+
+h2#titulo2{
+    color: #FFFFFF
+}
