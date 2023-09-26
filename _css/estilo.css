@@ -42,6 +42,7 @@ h3#destinos{
     font-style: italic;
     align-items: center;
     display: flex;
+    color:#FFFFFF
 }
 
 h3#frota{
@@ -49,6 +50,7 @@ h3#frota{
     font-style: italic;
     align-items: center;
     display: flex;
+    color:#FFFFFF
 }
 
 /*Formatação do Menu*/
@@ -61,11 +63,18 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
 }
-li#pagina_inicial{
-    color: #1BB4E8;
+.destaque{
+    color: #1BB4E8 !important;
+    text-decoration: none;
 }
-li.itens_menu{
+.menu a{
     color: #FFFFFF;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #1BB4E8;
+    text-decoration: none;
 }
