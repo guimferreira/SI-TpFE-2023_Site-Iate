@@ -30,16 +30,13 @@ h2#titulo2{
 }
 
 /* Formatação com imagens com legenda */
-figure.foto_iate {
+img#foto_iate {
     position: relative;
-    }
-
-    figure.foto_iate img{
     width: 100%;
-    height: 100%;
+    height: 100%
     }
 
-figcaption#chamada{
+div#box{
     opacity: 0.9;
     position: absolute;
     top: 500px;
