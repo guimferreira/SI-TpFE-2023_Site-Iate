@@ -1,100 +1,85 @@
 @charset "UTF-8";
 
 body{
-    background-color: #EBEBEB;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red; /*APAGAR*/
+}
+main{
+    background-color: hsl(0, 0%, 90%);
+    padding-left: 70px;
+    padding-right: 30px;
+    border: 1px solid red; /*APAGAR*/
 }
 
+/*BORDAS PROVISÓRIAS PARA MARCAÇÃO*/
+section{
+    border: 1px solid red; /*APAGAR*/
+}
+img{
+    border: 1px solid red; /*APAGAR*/
+}
+div{
+    border: 1px solid red; /*APAGAR*/
+}
+h1{
+    border: 1px solid red; /*APAGAR*/
+}
+h2{
+    border: 1px solid red; /*APAGAR*/
+}
+h3{
+    border: 1px solid red; /*APAGAR*/
+}
+h4{
+    border: 1px solid red; /*APAGAR*/
+}
+p{
+    border: 1px solid red; /*APAGAR*/
+}
+
+/*Formatação do cabeçalho*/
 header{
-    padding: 0px 25px;
     display: flex;
+    padding: 25px 25px;
     align-items: center;
     background-color: #21272B;
+    border: 1px solid red; /*APAGAR*/
 }
-
-h2#titulo1{
+header img{
+    width: 60px;
+}
+#titulos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+#subtitulo1{
     color: #1BB4E8;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    margin-bottom: 1px;
-    margin-left: 10px;
+    margin: 0;
 }
-
-h2#titulo2{
+#subtitulo2{
     color: #FFFFFF;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    margin-top: 1px;
-    margin-left: 10px;
+    margin: 0;
 }
 
-/* Formatação com imagens com legenda */
-img#foto_iate {
-    position: relative;
-    width: 100%;
-    height: 100%
-    }
-
-div#box{
-    opacity: 0.9;
-    position: absolute;
-    top: 500px;
-    left: 800px;
-    color: white;
-    width: 35%;
-    height: 35%;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: #1a3243 ;
-}
-
-div#contato{
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-bottom: 10px;
-    margin-left: 30px;
-}
-span#telefone{
-    color: #C6B07F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 120%;
-}
-
-section#conteudo{
-    background-color: white;
-}
-
-h3#destinos{
-    background-color: #1BB4E8;
-}
-
-h3#frota{
-    background-color: #C6B07F;
-}
-
-#portfolio{
-    padding-left: 5px;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-    align-items: center;
-    display: flex;
-    color:#FFFFFF;
-    font-style: italic;
-}
-
-/*Formatação do Menu*/
+/*Formatação do menu*/
 nav ul{
     list-style: none;
     position: absolute;
-    top: 45px;
-    right: 25px;
+    right: 30px;
+    border: 1px solid red; /*APAGAR*/
 }
 nav li{
     display: inline-block;
-    padding: 10px;
+    width: 190px;
+    text-align: center;
+    border-right: 1px solid white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 12px;
+    font-size: 17px;
+}
+#last{
+    border-right: 0px;
 }
 .destaque{
     color: #1BB4E8 !important;
@@ -109,11 +94,71 @@ nav li{
     text-decoration: none;
 }
 
-/*Rodapé*/
+/*Formatação da chamada para contato*/
+#iate_contato{
+    position: relative;
+}
+#foto_iate {
+    width: 100%;
+    height: 100%
+    }
+#box{
+    position: absolute;
+    top: 300px;
+    right: 180px;
+    color: white;
+    width: 35%;
+    height: 35%;
+    padding: 35px 45px 50px 30px;
+    box-sizing: border-box;
+    background-color: #1a3243;
+    opacity: 0.9;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contato{
+    display: flex;
+
+}
+#telefone{
+    color: #C6B07F;
+    font-size: 120%;
+}
+
+/*Formatação do conteúdo*/
+#conteudo{
+    background-color: white;
+    display: flex;
+}
+#destinos{
+    background-color: #1BB4E8;
+    margin-top: 0px;
+}
+#frota{
+    background-color: #C6B07F;
+    margin-top: 0px;
+}
+.portfolio{
+    padding-left: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    align-items: center;
+    display: flex;
+    color:#FFFFFF;
+    font-style: italic;
+}
+#fotos_frota{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/*Formatação do rodapé*/
 footer{
     font-size: 10px;
     background-color: #4e4d4dbe;
     padding: 20px;
     opacity: 30%;
     align-items: center;
+    border: 1px solid red; /*APAGAR*/
 }
