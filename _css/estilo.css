@@ -1,15 +1,10 @@
 @charset "UTF-8";
 
-body{
+* {
     margin: 0;
     padding: 0;
-    border: 1px solid red; /*APAGAR*/
-}
-main{
-    background-color: hsl(0, 0%, 90%);
-    padding-left: 70px;
-    padding-right: 30px;
-    border: 1px solid red; /*APAGAR*/
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*BORDAS PROVISÓRIAS PARA MARCAÇÃO*/
@@ -38,10 +33,17 @@ p{
     border: 1px solid red; /*APAGAR*/
 }
 
+body{
+    border: 1px solid red; /*APAGAR*/
+    background-color: hsl(0, 0%, 90%);
+}
+
 /*Formatação do cabeçalho*/
 header{
     display: flex;
-    padding: 25px 25px;
+    width: 1420px;
+    margin: 0 30px 0 70px;
+    padding: 25px 0 25px 25px;
     align-items: center;
     background-color: #21272B;
     border: 1px solid red; /*APAGAR*/
@@ -50,24 +52,20 @@ header img{
     width: 60px;
 }
 #titulos{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-style: italic;
 }
 #subtitulo1{
     color: #1BB4E8;
-    margin: 0;
 }
 #subtitulo2{
     color: #FFFFFF;
-    margin: 0;
 }
 
 /*Formatação do menu*/
 nav ul{
     list-style: none;
     position: absolute;
-    right: 30px;
     border: 1px solid red; /*APAGAR*/
 }
 nav li{
@@ -75,7 +73,6 @@ nav li{
     width: 190px;
     text-align: center;
     border-right: 1px solid white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
 }
 #last{
@@ -92,6 +89,12 @@ nav li{
 .menu a:hover{
     color: #1BB4E8;
     text-decoration: none;
+}
+
+main{
+    width: 1420px;
+    margin: 0 30px 0 70px;
+    border: 1px solid red; /*APAGAR*/
 }
 
 /*Formatação da chamada para contato*/
@@ -114,7 +117,6 @@ nav li{
     background-color: #1a3243;
     opacity: 0.9;
     font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
     font-size: 40px;
