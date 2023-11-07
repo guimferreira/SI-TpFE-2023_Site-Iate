@@ -5,82 +5,61 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/*BORDAS PROVISÓRIAS PARA MARCAÇÃO*/
-section{
-    border: 1px solid red; /*APAGAR*/
-}
-img{
-    border: 1px solid red; /*APAGAR*/
-}
-div{
-    border: 1px solid red; /*APAGAR*/
-}
-h1{
-    border: 1px solid red; /*APAGAR*/
-}
-h2{
-    border: 1px solid red; /*APAGAR*/
-}
-h3{
-    border: 1px solid red; /*APAGAR*/
-}
-h4{
-    border: 1px solid red; /*APAGAR*/
-}
-p{
     border: 1px solid red; /*APAGAR*/
 }
 
 body{
-    border: 1px solid red; /*APAGAR*/
     background-color: hsl(0, 0%, 90%);
+}
+
+#principal{
+    width: 980px;
+    margin: 0px auto;
 }
 
 /*Formatação do cabeçalho*/
 header{
+    height: 98px;
     display: flex;
-    width: 1420px;
-    margin: 0 30px 0 70px;
-    padding: 25px 0 25px 25px;
+    padding: 21px 0 21px 28px;
     align-items: center;
     background-color: #21272B;
-    border: 1px solid red; /*APAGAR*/
 }
 header img{
-    width: 60px;
+    height: 56px;
+    margin-right: 5px;
 }
-#titulos{
-    font-size: 20px;
+#titulos h1{
+    color: #1BB4E8;
+    font-size: 22px;
     font-style: italic;
 }
-#subtitulo1{
-    color: #1BB4E8;
-}
-#subtitulo2{
+#titulos h2{
     color: #FFFFFF;
+    font-size: 22px;
+    font-style: italic;
 }
 
 /*Formatação do menu*/
 nav ul{
     list-style: none;
     position: absolute;
-    border: 1px solid red; /*APAGAR*/
+    width: 675px;
+    margin-left: 75px;
+    margin-top: 6px;
 }
 nav li{
     display: inline-block;
-    width: 190px;
+    width: 130px;
     text-align: center;
     border-right: 1px solid white;
-    font-size: 17px;
+    font-size: 12px;
 }
 #last{
     border-right: 0px;
 }
 .destaque{
     color: #1BB4E8 !important;
-    text-decoration: none;
 }
 .menu a{
     color: #FFFFFF;
@@ -88,56 +67,36 @@ nav li{
 }
 .menu a:hover{
     color: #1BB4E8;
-    text-decoration: none;
-}
-
-main{
-    width: 1420px;
-    margin: 0 30px 0 70px;
-    border: 1px solid red; /*APAGAR*/
 }
 
 /*Formatação da chamada para contato*/
 #iate_contato{
-    position: relative;
+    height: 495px;
+    background-image: url('../_imagens/barcoprincipal.jpg');
 }
-#foto_iate {
-    width: 100%;
-    height: 100%
-    }
+
 #box{
-    position: absolute;
-    bottom: 100px;
-    right: 50px;
+    width: 425px;
+    height: 225px;
+    position: relative;
+    top: 210px;
+    left: 520px;
     color: white;
-    width: 45%;
-    height: 45%;
-    padding: 40px 65px 65px 30px;
+    padding: 35px 55px 55px 30px;
     box-sizing: border-box;
-    background-color: #1a3243;
-    opacity: 0.9;
+    background-color: #1a3243e7;
     font-style: italic;
 }
-h1{
-    font-size: 40px;
-    margin: 0;
+#box h3{
+    font-size: 26px;
 }
 #contato{
     display: flex;
-    align-items: stretch;
-    overflow: hidden;
-    justify-content: left;
-    font-size: 30px;
-    margin: 30px 0 0 0;
-}
-#contato img{
-    scale: 90%;
-    width: 50px;
-    margin: 0 10px 0 0;
+    font-size: 15px;
+    margin: 35px 0 0 0;
 }
 #contato h4{
-    width: 460px;
-    margin: 0;
+    margin-left: 5px;
 }
 #telefone{
     color: #C6B07F;
@@ -150,26 +109,34 @@ h1{
     display: flex;
     justify-content: center;
 }
-#destinos{
-    background-color: #1BB4E8;
-    margin-top: 0px;
-    width: 450px;
-    height: 45px;
+.box-artigo{
+    margin: 10px 25px 50px;
+    width: 455px;
 }
-#frota{
-    background-color: #C6B07F;
+.box-titulo{
     margin-top: 0px;
-    width: 450px;
-    height: 45px;
-}
-.portfolio{
+    height: 50px;
     padding-left: 5px;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
     align-items: center;
     display: flex;
-    color:#FFFFFF;
+    font-size: 30px;
     font-style: italic;
+    color:#FFFFFF;
+}
+#titulo_destinos{
+    background-color: #1BB4E8;
+}
+#titulo_frota{
+    background-color: #C6B07F;
+}
+.titulo-artigo{
+    font-style: italic;
+    font-size: 25px;
+}
+.box-paragrafo{
+    font-size: 20px;
 }
 #fotos_frota{
     display: grid;
@@ -184,5 +151,4 @@ footer{
     padding: 20px;
     opacity: 30%;
     align-items: center;
-    border: 1px solid red; /*APAGAR*/
 }
