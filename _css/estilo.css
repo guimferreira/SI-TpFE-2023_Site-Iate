@@ -1,154 +1,196 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 1px solid red; /*APAGAR*/
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-color: hsl(0, 0%, 90%);
-}
-
-#principal{
-    width: 980px;
     margin: 0px auto;
+    width: 980px;
 }
 
 /*Formatação do cabeçalho*/
-header{
-    height: 98px;
-    display: flex;
-    padding: 21px 0 21px 28px;
+header {
     align-items: center;
     background-color: #21272B;
+    display: flex;
+    height: 98px;
+    padding: 21px 0 21px 28px;
 }
-header img{
-    height: 56px;
+
+header img {
     margin-right: 5px;
 }
-#titulos h1{
+
+#titulos h1 {
     color: #1BB4E8;
     font-size: 22px;
     font-style: italic;
 }
-#titulos h2{
+
+#titulos h2 {
     color: #FFFFFF;
     font-size: 22px;
     font-style: italic;
 }
 
 /*Formatação do menu*/
-nav ul{
+nav ul {
     list-style: none;
     position: absolute;
     width: 675px;
     margin-left: 75px;
     margin-top: 6px;
 }
-nav li{
+
+nav li {
     display: inline-block;
     width: 130px;
     text-align: center;
     border-right: 1px solid white;
     font-size: 12px;
 }
-#last{
+
+nav li:last-of-type {
     border-right: 0px;
 }
-.destaque{
+
+.destaque {
     color: #1BB4E8 !important;
 }
-.menu a{
+
+.menu a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: #1BB4E8;
 }
 
 /*Formatação da chamada para contato*/
-#iate_contato{
+#iate_contato {
     height: 495px;
     background-image: url('../_imagens/barcoprincipal.jpg');
 }
 
-#box{
-    width: 425px;
-    height: 225px;
-    position: relative;
-    top: 210px;
-    left: 520px;
-    color: white;
-    padding: 35px 55px 55px 30px;
-    box-sizing: border-box;
+#box {
     background-color: #1a3243e7;
+    box-sizing: border-box;
+    color: white;
     font-style: italic;
+    height: 225px;
+    left: 520px;
+    position: relative;
+    padding: 35px 55px 55px 20px;
+    top: 210px;
+    width: 425px;
 }
-#box h3{
+
+#box h3 {
     font-size: 26px;
+    margin-bottom: 30px;
 }
-#contato{
+
+#contato {
+    align-items: center;
     display: flex;
-    font-size: 15px;
-    margin: 35px 0 0 0;
+    height: 45px;
 }
-#contato h4{
-    margin-left: 5px;
+
+#contato img {
+    height: 37.5px;
+    margin-right: 10px;
+    width: 25px;
 }
-#telefone{
+
+#contato p {
+    font-size: 20px;
+}
+
+#telefone {
     color: #C6B07F;
     font-size: 110%;
 }
 
 /*Formatação do conteúdo*/
-#conteudo{
+#conteudo {
     background-color: white;
     display: flex;
     justify-content: center;
+    padding: 15px 17.5px 45px;
 }
-.box-artigo{
-    margin: 10px 25px 50px;
+
+.box-artigo {
+    margin: 0px 17.5px 0px;
     width: 455px;
 }
+
 .box-titulo{
-    margin-top: 0px;
-    height: 50px;
-    padding-left: 5px;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
     align-items: center;
     display: flex;
-    font-size: 30px;
-    font-style: italic;
-    color:#FFFFFF;
+    height: 40px;
+    padding-left: 5px;
 }
-#titulo_destinos{
+
+.box-titulo h3 {
+    color:#FFFFFF;
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+#titulo_destinos {
     background-color: #1BB4E8;
 }
-#titulo_frota{
+
+#titulo_frota {
     background-color: #C6B07F;
 }
-.titulo-artigo{
-    font-style: italic;
-    font-size: 25px;
+
+.artigo {
+    height: 167px;
+    padding: 22.5px 0;
 }
-.box-paragrafo{
+
+.artigo h4 {
     font-size: 20px;
+    font-style: italic;
+    margin-bottom: 15px;
 }
-#fotos_frota{
+
+.artigo p {
+    font-size: 15px;
+}
+
+#fotos_frota {
     display: grid;
+    gap: 15px;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }
 
 /*Formatação do rodapé*/
-footer{
-    font-size: 10px;
-    background-color: #4e4d4dbe;
-    padding: 20px;
-    opacity: 30%;
+footer {
     align-items: center;
+    background-color: #dfe1e0;
+    font-size: 10px;
+    height: 70px;
+    padding: 30px;
+}
+
+/* Formatação das páginas secundárias */
+.titulos-paginas {
+    padding: 30px 30px;
+}
+
+.paginas-sec {
+    background-color: #FFFFFF;
+}
+
+form {
+    padding: 0 30px 30px;
 }
